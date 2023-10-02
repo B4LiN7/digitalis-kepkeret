@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digitális Képkeret</title>
+    <style>
+
+      .row {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 col-lg-3">
+          <label for="imageUrl">Kép URL:</label>
+        </div>
+        <div class="col-md-12 col-lg-9">
+          <input type="text" class="form-control" name="imageUrl" id="imageUrl">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-lg-3">
+          <label for="imageWidth">Kép széllesége:</label>
+        </div>
+        <div class="col-md-12 col-lg-9">
+          <input type="number" class="form-control" name="imageWidth" id="imageWidth">
+        </div>
+      </div>
+
+
+      <!--
+      <div class="row">
+        <div class="col-md-12 col-lg-3">
+          <label for="imageHeight">Kép magassága:</label>
+        </div>
+        <div class="col-md-12 col-lg-9">
+          <input type="number" class="form-control" name="imageHeight" id="imageHeight">
+        </div>
+      </div>
+      -->
+
+      <div class="row">
+        <div class="col-md-12 col-lg-3">
+          <label for="imageBorder">Képkeret vastagsága:</label>
+        </div>
+        <div class="col-md-12 col-lg-9">
+          <input type="number" class="form-control" name="imageBorder" id="imageBorder">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-lg-3">
+          <label for="imageBorderColor">Képkeret szine:</label>
+        </div>
+        <div class="col-md-12 col-lg-9">
+          <input type="color" class="form-control form-control-color" name="imageBorderColor" id="imageBorderColor">
+        </div>
+      </div>
+
+      <div>
+        <button class="btn btn-primary" id="imageSet">Mehet</button>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <img id="image" alt="Kép">
+        </div>
+      </div>
+
+      <footer style="text-align: center;">
+        <p>Füredi Bálint Krisztián (2/14.S)</p>
+        <button class="btn btn-primary" id="darkMode">Sötét/Világos</button>
+      </footer>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
